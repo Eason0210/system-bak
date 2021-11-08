@@ -97,7 +97,7 @@ in
         m-cli
         more
         mpv
-        # nix-scripts
+        nix-scripts
         nixpkgs-fmt
         nixfmt
         nodejs
