@@ -26,6 +26,18 @@ in
     tmux.enable = true;
     ssh.enable = true;
 
+    fzf = {
+      enable = true;
+      enableZshIntegration = true;
+      defaultOptions = [
+        "--height 40%"
+        "--layout=reverse"
+        "--info=inline"
+        "--border"
+        "--exact"
+      ];
+    };
+
   };
 
   home =
