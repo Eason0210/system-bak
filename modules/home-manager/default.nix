@@ -13,7 +13,7 @@ let
 
 in
 {
-  imports = [ ./git.nix ];
+  imports = [ ./git.nix ./dotfiles ];
 
   programs.home-manager = {
     enable = true;
