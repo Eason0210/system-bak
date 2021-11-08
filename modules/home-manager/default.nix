@@ -12,7 +12,7 @@ let
   '');
 
 in {
-  imports = [ ./vim ./cli ./kitty ./dotfiles ./git.nix ];
+  imports = [ ./git.nix ];
 
   programs.home-manager = {
     enable = true;
@@ -54,38 +54,24 @@ in {
       coreutils-full
       curl
       fd
-      gawk
-      ghc
       git
       gnugrep
       gnupg
       gnused
-      google-cloud-sdk
       htop
-      httpie
       jq
       neofetch
       nixUnstable
       nixfmt
       nixpkgs-fmt
       nodejs
-      openjdk
-      openssh
-      pandoc
-      pre-commit
       python3Packages.poetry
       ranger
-      (ruby.withPackages (ps: with ps; [ rufo solargraph ]))
       ripgrep
-      ripgrep-all
       rsync
       sysdo
-      tealdeer
-      tectonic
       treefmt
-      vagrant
       yarn
-      youtube-dl
     ];
   };
 }
