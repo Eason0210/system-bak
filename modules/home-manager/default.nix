@@ -20,6 +20,11 @@ in
       enable = true;
       path = "${config.home.homeDirectory}/.nixpkgs/modules/home-manager";
     };
+
+    direnv.enable = true;
+    gpg.enable = true;
+    tmux.enable = true;
+
   };
 
   home =
