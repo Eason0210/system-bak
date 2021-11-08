@@ -51,36 +51,70 @@ in
         (exe haskellPackages.cabal-install)
         (exe haskellPackages.hpack)
         (exe haskellPackages.haskell-language-server)
+        (exe haskellPackages.hlint)
+        (exe haskellPackages.hindent)
+        (exe haskellPackages.ormolu)
+        (exe haskellPackages.hie-bios)
+        (exe haskellPackages.implicit-hie)
         ghc
         aspell
         aspellDicts.en
-
+        clang-tools
+        cppcheck
         # python with default packages
         (python3.withPackages
           (ps: with ps; [ black numpy scipy networkx matplotlib ]))
-        awscli2
-        cachix
         # comma
         coreutils-full
         curl
+        # emacsGit
         fd
         git
+        gnugrep
+        gnumake
         gnugrep
         gnupg
         gnused
         htop
-        jq
         neofetch
         nixUnstable
-        nixfmt
-        nixpkgs-fmt
-        nodejs
         python3Packages.poetry
         ripgrep
         rsync
         sysdo
         treefmt
         yarn
+        gawk
+        gdb
+        gnuplot
+        gnutar
+        graphviz-nox
+        hugo
+        imagemagick
+        j
+        jq
+        less
+        m-cli
+        more
+        mpv
+        # nix-scripts
+        nixpkgs-fmt
+        nixfmt
+        nodejs
+        nodePackages.eslint
+        pandoc
+        pstree
+        ruby
+        rust-analyzer
+        rustup
+        shfmt
+        sqlite
+        tree
+        unrar
+        unzip
+        wget
+        xz
+        zip
       ];
     };
 }
