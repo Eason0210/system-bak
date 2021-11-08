@@ -47,6 +47,10 @@ in
       # define package definitions for current user environment
       packages = with pkgs; let exe = haskell.lib.justStaticExecutables; in
       [
+        # python with default packages
+        (python3.withPackages
+          (ps: with ps; [ black numpy scipy networkx matplotlib ]))
+
         # Haskell tools
         (exe haskellPackages.cabal-install)
         (exe haskellPackages.hpack)
@@ -61,34 +65,24 @@ in
         aspellDicts.en
         clang-tools
         cppcheck
-        # python with default packages
-        (python3.withPackages
-          (ps: with ps; [ black numpy scipy networkx matplotlib ]))
         # comma
         coreutils-full
         curl
         # emacsGit
         fd
+        gawk
+        gdb
         git
         gnugrep
         gnumake
-        gnugrep
         gnupg
+        gnuplot
         gnused
+        gnutar
+        graphviz-nox
         htop
         neofetch
         nixUnstable
-        python3Packages.poetry
-        ripgrep
-        rsync
-        sysdo
-        treefmt
-        yarn
-        gawk
-        gdb
-        gnuplot
-        gnutar
-        graphviz-nox
         hugo
         imagemagick
         j
@@ -104,16 +98,22 @@ in
         nodePackages.eslint
         pandoc
         pstree
+        python3Packages.poetry
         ruby
         rust-analyzer
         rustup
+        ripgrep
+        rsync
+        sysdo
         shfmt
         sqlite
         tree
+        treefmt
         unrar
         unzip
         wget
         xz
+        yarn
         zip
       ];
     };
