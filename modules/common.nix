@@ -3,8 +3,8 @@
 
   programs.zsh = {
     enable = true;
-    enableCompletion = true;
-    enableBashCompletion = true;
+    # enableCompletion = true;
+    # enableBashCompletion = true;
   };
 
   user = {
@@ -43,7 +43,7 @@
       bat
       fzf
       ripgrep
-      zsh
+      # zsh
 
       # languages
       python3
