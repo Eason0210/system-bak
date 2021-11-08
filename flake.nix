@@ -1,15 +1,15 @@
 {
   description = "nix system configurations";
 
-  nixConfig = {
-    substituters =
-      [ "https://kclejeune.cachix.org" "https://nix-community.cachix.org/" ];
+  # nixConfig = {
+  #   substituters =
+  #     [ "https://kclejeune.cachix.org" "https://nix-community.cachix.org/" ];
 
-    trusted-public-keys = [
-      "kclejeune.cachix.org-1:fOCrECygdFZKbMxHClhiTS6oowOkJ/I/dh9q9b1I4ko="
-      "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
-    ];
-  };
+  #   trusted-public-keys = [
+  #     "kclejeune.cachix.org-1:fOCrECygdFZKbMxHClhiTS6oowOkJ/I/dh9q9b1I4ko="
+  #     "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+  #   ];
+  # };
 
   inputs = {
     darwin-stable.url = "github:nixos/nixpkgs/nixpkgs-21.05-darwin";
