@@ -1,5 +1,5 @@
 { config, lib, pkgs, ... }: {
-  user.name = "lejeukc1";
+  user.name = "aqua0210";
   hm = { imports = [ ./home-manager/work.nix ]; };
 
   security.pki.certificateFiles = [

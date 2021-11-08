@@ -12,8 +12,8 @@
     enable = true;
     lfs.enable = true;
     package = pkgs.git;
-    userEmail = "kennan.lejeune@jhuapl.edu";
-    userName = "Kennan LeJeune";
+    userEmail = "aqua0210@163.com";
+    userName = "Eason Huang";
     extraConfig = { http.sslVerify = true; };
   };
 }
