@@ -120,25 +120,11 @@
         }) lib.platforms.linux));
 
       darwinConfigurations = {
-        randall = mkDarwinConfig {
-          system = "aarch64-darwin";
-          extraModules = [
-            ./profiles/personal.nix
-            ./modules/darwin/apps.nix
-            { homebrew.brewPrefix = "/opt/homebrew/bin"; }
-          ];
-        };
-        randall-intel = mkDarwinConfig {
+        MacBook = mkDarwinConfig {
           system = "x86_64-darwin";
           extraModules = [
             ./profiles/personal.nix
-            ./modules/darwin/apps.nix
-            { homebrew.brewPrefix = "/opt/homebrew/bin"; }
           ];
-        };
-        work = mkDarwinConfig {
-          extraModules =
-            [ ./profiles/work.nix ./modules/darwin/apps-minimal.nix ];
         };
       };
 
