@@ -47,6 +47,14 @@ in
       # define package definitions for current user environment
       packages = with pkgs; let exe = haskell.lib.justStaticExecutables; in
       [
+        # Haskell tools
+        (exe haskellPackages.cabal-install)
+        (exe haskellPackages.hpack)
+        (exe haskellPackages.haskell-language-server)
+        ghc
+        aspell
+        aspellDicts.en
+
         # python with default packages
         (python3.withPackages
           (ps: with ps; [ black numpy scipy networkx matplotlib ]))
