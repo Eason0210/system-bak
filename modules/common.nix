@@ -56,6 +56,4 @@
     # list of acceptable shells in /etc/shells
     shells = with pkgs; [ bash zsh fish ];
   };
-
-  fonts.fonts = with pkgs; [ jetbrains-mono ];
 }
