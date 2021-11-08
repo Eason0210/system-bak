@@ -38,6 +38,21 @@ in
       ];
     };
 
+    neovim = {
+      enable = true;
+      vimAlias = true;
+      # extraConfig = builtins.readFile ./home/extraConfig.vim;
+
+      plugins = with pkgs.vimPlugins; [
+        # Syntax / Language Support ##########################
+        vim-nix
+        # UI #################################################
+        gruvbox # colorscheme
+        vim-gitgutter # status in gutter
+        # vim-devicons
+        vim-airline
+      ];
+    };
   };
 
   home =
