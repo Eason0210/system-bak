@@ -108,15 +108,15 @@
         };
       };
 
-      nixosConfigurations = {
-        Area51 = mkNixosConfig {
-          hardwareModules = [
-            ./modules/hardware/area51.nix
-            nixos-hardware.nixosModules.Alienware-Area-51-R5
-          ];
-          extraModules = [ ./profiles/personal.nix ];
-        };
-      };
+      # nixosConfigurations = {
+      #   Area51 = mkNixosConfig {
+      #     hardwareModules = [
+      #       ./modules/hardware/area51.nix
+      #       nixos-hardware.nixosModules.Alienware-Area-51-R5
+      #     ];
+      #     extraModules = [ ./profiles/personal.nix ];
+      #   };
+      # };
 
       homeConfigurations = {
         arch = mkHomeConfig {
