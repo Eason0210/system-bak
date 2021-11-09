@@ -119,21 +119,8 @@
       };
 
       homeConfigurations = {
-        server = mkHomeConfig {
+        arch = mkHomeConfig {
           username = "aqua0210";
-          extraModules = [ ./profiles/home-manager/personal.nix ];
-        };
-        darwinServer = mkHomeConfig {
-          username = "aqua0210";
-          system = "x86_64-darwin";
-          extraModules = [ ./profiles/home-manager/personal.nix ];
-        };
-        workServer = mkHomeConfig {
-          username = "aqua0210";
-          extraModules = [ ./profiles/home-manager/work.nix ];
-        };
-        vagrant = mkHomeConfig {
-          username = "vagrant";
           extraModules = [ ./profiles/home-manager/personal.nix ];
         };
       };
