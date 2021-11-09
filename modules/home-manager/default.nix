@@ -131,6 +131,7 @@ in
         nixfmt
         nodejs
         nodePackages.eslint
+        openjdk
         pandoc
         pstree
         poetry
