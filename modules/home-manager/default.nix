@@ -133,7 +133,7 @@ in
         nodePackages.eslint
         pandoc
         pstree
-        python3Packages.poetry
+        poetry
         ruby
         rust-analyzer
         rustup
