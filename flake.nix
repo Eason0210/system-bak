@@ -44,7 +44,6 @@
       inherit (nixpkgs.lib) nixosSystem;
       inherit (home-manager.lib) homeManagerConfiguration;
       inherit (flake-utils.lib) eachDefaultSystem eachSystem;
-      inherit (builtins) listToAttrs map;
 
       mkLib = nixpkgs:
         nixpkgs.lib.extend
@@ -99,25 +98,6 @@
           };
         };
     in {
-      checks = listToAttrs (
-        # darwin checks
-        (map (system: {
-          name = system;
-          value = {
-            darwin =
-              self.darwinConfigurations.MacBook.config.system.build.toplevel;
-            darwinServer =
-              self.homeConfigurations.darwinServer.activationPackage;
-          };
-        }) lib.platforms.darwin) ++
-        # linux checks
-        (map (system: {
-          name = system;
-          value = {
-            nixos = self.nixosConfigurations.phil.config.system.build.toplevel;
-            server = self.homeConfigurations.server.activationPackage;
-          };
-        }) lib.platforms.linux));
 
       darwinConfigurations = {
         MacBook = mkDarwinConfig {
