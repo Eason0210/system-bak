@@ -73,7 +73,6 @@ in
         GPG_TTY = "/dev/ttys000";
         CLICOLOR = 1;
         LSCOLORS = "ExFxBxDxCxegedabagacad";
-        JAVA_HOME = "${pkgs.openjdk.home}";
         NODE_PATH = "${NODE_GLOBAL}/lib";
       };
       sessionPath = [ "${NODE_GLOBAL}/bin" ];
