@@ -132,10 +132,10 @@ in
         pandoc
         pstree
         poetry
-        ruby
+        ripgrep
         rust-analyzer
         rustup
-        ripgrep
+        (ruby.withPackages (ps: with ps; [ rufo solargraph ]))
         rsync
         sysdo
         shfmt
