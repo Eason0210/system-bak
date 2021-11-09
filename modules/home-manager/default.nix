@@ -101,7 +101,7 @@ in
         # comma
         coreutils-full
         curl
-        # emacsGit
+        emacsGit
         fd
         gawk
         gdb
