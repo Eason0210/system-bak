@@ -71,8 +71,6 @@ in
       sessionVariables = {
         GRAPHVIZ_DOT = "${pkgs.graphviz}/bin/dot";
         GPG_TTY = "/dev/ttys000";
-        CLICOLOR = 1;
-        LSCOLORS = "ExFxBxDxCxegedabagacad";
         NODE_PATH = "${NODE_GLOBAL}/lib";
       };
       sessionPath = [ "${NODE_GLOBAL}/bin" ];
