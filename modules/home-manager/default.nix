@@ -69,9 +69,8 @@ in
       # changes in each release.
       stateVersion = "20.09";
       sessionVariables = {
+        GRAPHVIZ_DOT = "${pkgs.graphviz}/bin/dot";
         GPG_TTY = "/dev/ttys000";
-        EDITOR = "nvim";
-        VISUAL = "nvim";
         CLICOLOR = 1;
         LSCOLORS = "ExFxBxDxCxegedabagacad";
         JAVA_HOME = "${pkgs.openjdk.home}";
