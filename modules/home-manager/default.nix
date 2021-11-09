@@ -130,6 +130,7 @@ in
         nodejs
         nodePackages.eslint
         pandoc
+        pre-commit
         pstree
         poetry
         ripgrep
