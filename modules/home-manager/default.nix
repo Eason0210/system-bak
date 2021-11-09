@@ -144,7 +144,6 @@ in
         treefmt
         unrar
         unzip
-        wget
         xz
         yarn
         zip
