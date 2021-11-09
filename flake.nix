@@ -109,10 +109,10 @@
       };
 
       nixosConfigurations = {
-        phil = mkNixosConfig {
+        Area51 = mkNixosConfig {
           hardwareModules = [
-            ./modules/hardware/phil.nix
-            nixos-hardware.nixosModules.lenovo-thinkpad-t460s
+            ./modules/hardware/area51.nix
+            nixos-hardware.nixosModules.Alienware-Area-51-R5
           ];
           extraModules = [ ./profiles/personal.nix ];
         };
